@@ -6,7 +6,7 @@ def get_cohere_response(prompt, api_key):
         co = cohere.Client(api_key)
         response = co.chat(
             message=prompt,
-            model="command",
+            model="command-r-08-2024",
             temperature=0.3,
             preamble="Você é um especialista em análise de documentos brasileiros"
         )
